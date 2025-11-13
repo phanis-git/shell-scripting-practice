@@ -1,1 +1,16 @@
 Automation goals : speed and accuracy
+
+
+variables:-
+
+type1
+--------
+project_name="roboshop"
+echo "Project name is :: ${project_name}"
+
+special variables
+-----------------
+person1=$1
+person2=$2
+
+sh file2.sh phani kiran
