@@ -23,7 +23,7 @@ echo "Need root privilege"
 exit 1
 fi
 
-dnf list installed mysql &>> 
+dnf list installed mysql 
 if [ $? -ne 0 ]; then
 dnf install mysql -y
 validate $? "Mysql-server"
