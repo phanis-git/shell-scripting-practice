@@ -18,8 +18,3 @@ fi
 
 dnf install mysql -y
 validate $? "Mysql-server"
-if [ $is_mysql_installed -eq 0 ]; then
-    echo "Mysql installed successfully"
-else 
-    echo "Mysql installation failure"
-fi
