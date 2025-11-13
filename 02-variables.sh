@@ -23,6 +23,3 @@ echo "Your password is $password"
 
 
 
-# Environment variables
-export name="phani"
-echo "My Name is :: $name"
