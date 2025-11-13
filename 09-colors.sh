@@ -25,7 +25,7 @@ fi
 
 mkdir /var/log/shell-script-practice
 log_file="$0.log"
-touch log_file
+touch $log_file
 
 dnf list installed mysql 
 if [ $? -ne 0 ]; then
