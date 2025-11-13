@@ -47,3 +47,57 @@ special variables:
 All variables to print , we can pass n number of values
 $@
 $*
+
+$0 - current executed script name
+$? - exit status     -> 0 for success   --> 1 to 127 failure
+$$ - PID for current executed script
+$PWD - current working directory
+$USER - user name of running the script
+$HOME - home directory of current user
+$! - PID of last command in background
+
+
+Datatypes:
+---------
+array
+names=("siva","phani")
+${names[0]} - 0th index value
+${names[@]} - all values
+
+
+Conditions:
+-----------
+if [ condition ]; then
+
+fi
+------------------------
+if [ condition ]; then
+
+else
+
+fi 
+-----------------------
+if [ condition ]; then
+
+elif [ condition ]; then 
+
+else 
+
+fi
+
+
+
+Operators:
+--------
+
+-lt - less than
+-gt - greater than
+-eq - equals to 
+-ne - not equals to 
+
+
+exit :  By default shell script doesnot exit if there is any error in script
+----
+exit 0 - success exit
+exit 1 - failure exit 
+
