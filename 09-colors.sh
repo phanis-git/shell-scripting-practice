@@ -1,4 +1,4 @@
 #!/bin/bash
-red="\e[32m"
+red="\e[31m"
 normal="\e0m"
-echo "$red RED $normal"
+echo -e "$red RED $normal"
