@@ -43,3 +43,7 @@ How to use linux commands within shell and take output
 variable_name=$(command)
 
 
+special variables:
+All variables to print , we can pass n number of values
+$@
+$*
