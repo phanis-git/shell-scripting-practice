@@ -31,7 +31,15 @@ echo "Your password is $password"
 type5  Environment variables 
 -----
 These are accessing only within the session or process , if we kill process it wont work
-export name="phani"
+export name="phani"    # this we need to set it cli
 echo "My Name is :: $name"
+if we exit and run script again it wont display 
+
+If we want to display even the process kill we need to source it in user homw directory .bashrc file 
+we need place the variables
+
+
+How to use linux commands within shell and take output
+variable_name=$(command)
 
 
