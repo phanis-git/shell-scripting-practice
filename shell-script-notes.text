@@ -101,3 +101,8 @@ exit :  By default shell script doesnot exit if there is any error in script
 exit 0 - success exit
 exit 1 - failure exit 
 
+
+Functions:
+----------
+
+
