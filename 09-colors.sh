@@ -5,7 +5,7 @@ normal="\e[0m"
 # echo -e "$red RED $normal"
 # echo -e "$green Green $normal"
 
-# log_file=
+
 
 validate (){
     if [ $1 -ne 0 ]; then
@@ -23,12 +23,16 @@ echo "Need root privilege"
 exit 1
 fi
 
+mkdir /var/log/shell-script-practice
+log_file="$0.log"
+touch log_file
+
 dnf list installed mysql 
 if [ $? -ne 0 ]; then
-dnf install mysql -y
+dnf install mysql -y &>> $log_file
 validate $? "Mysql-server"
 else 
-echo "Mysql server is already installed"
+echo "Mysql server is already installed" | tee -a $log_file
 fi 
 
 echo "$$"
