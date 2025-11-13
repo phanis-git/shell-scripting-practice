@@ -28,8 +28,9 @@ echo "Enter Password"
 read -s password
 echo "Your password is $password"
 
-type5
+type5  Environment variables 
 -----
+These are accessing only within the session or process , if we kill process it wont work
 export name="phani"
 echo "My Name is :: $name"
 
