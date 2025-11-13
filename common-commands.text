@@ -1,0 +1,9 @@
+cut command:-
+------------
+cut -d "<delimitter>" -f1
+
+ex: ps | grep bash | grep -v grep | cut -d "/" -f1
+
+
+awk command:- 
+awk -F ":" '{print $1F}'
