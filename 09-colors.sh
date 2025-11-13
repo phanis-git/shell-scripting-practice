@@ -23,9 +23,9 @@ echo "Need root privilege"
 exit 1
 fi
 
-mkdir /var/log/shell-script-practice
+mkdir -p /var/log/shell-script-practice
 log_file="$0.log"
-touch $log_file
+touch -p $log_file
 
 dnf list installed mysql 
 if [ $? -ne 0 ]; then
