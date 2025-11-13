@@ -116,3 +116,23 @@ validate (){
 function calling
 validate $? "Mysql"
 
+
+Colors:
+red="\e[31m"
+normal="\e[0m"
+
+
+Logs:-
+------
+> <file-output>.log         ---> > for storing purpose
+>>  ---> for appending to previous Logs
+
+Redirections:-
+--------------
+ls -l >/var/log/shell-script-practice/output.log
+lsds -l 2>/var/log/shell-script-practice/output.log
+
+1 for scccess storing , it is dy default
+2 for failure storing
+
+
