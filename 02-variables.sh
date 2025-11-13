@@ -20,3 +20,6 @@ echo "Your mail is $email"
 echo "Enter Password"
 read -s password
 echo "Your password is $password"
+
+export name="phani"
+echo "My Name is :: $name"
