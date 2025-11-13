@@ -4,3 +4,8 @@ for i in {1..10}
 do 
 echo "$i"
 done
+
+for i in {"phani","kumar"}
+do 
+echo "$i"
+done
