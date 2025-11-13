@@ -5,6 +5,6 @@ echo "Names :: ${names}"
 echo "Names :: ${names[@]}"
 echo "Names :: ${names[*]}"
 
-# courses=$@
+courses=$@
 # courseList=
-# echo "Courses ::"
+echo "Courses :: ${courses}"
