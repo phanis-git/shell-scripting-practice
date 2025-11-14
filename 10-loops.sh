@@ -15,3 +15,4 @@ for package in $@
 do 
 echo "Packages :: $package"
 done
+#  sh 10-loops.sh mysql nginx
