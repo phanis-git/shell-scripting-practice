@@ -35,7 +35,7 @@ FORMATTED_RAM=$(($USED_RAM*100 / $TOTAL_RAM))
 if [ $FORMATTED_RAM -gt $THRESHOLD_RAM ]; then
     echo "More ram consumed :: $FORMATTED_RAM %"
     MESSAGE="More Ram Consuming :: $FORMATTED_RAM %"
-sh ram-mail.sh "phanipspkmech@gmail.com" "High Ram Alert" "$MESSAGE"
+sh ram-mail.sh "aithasaikiran1999@gmail.com" "High Ram Alert" "$MESSAGE"
 fi
 
 
