@@ -275,3 +275,31 @@ fi
 
 
 
+How to call one script from another script
+------------------------------------------
+If we want to call script 2 in script 1 at the end of script 1
+we put 
+
+Direct calling:
+--------------
+#!/bin/bash
+
+echo "Running Script 1..."
+
+# call script2 at the end of script 1
+./script2.sh
+
+Here values not forwarded because of 2 scripts PID is different
+If script 2 fails , script 1 should not effected
+
+Using Source keyword or Sourcing:
+---------------------------------
+#!/bin/bash
+
+echo "Script 1 start..."
+
+source script2.sh
+
+Here variable values are shared . There is effect of script 1 with script 2 is effected due to same PID 
+
+
